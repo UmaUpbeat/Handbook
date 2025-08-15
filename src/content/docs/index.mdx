@@ -1,36 +1,54 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
+title: Welcome to Uma Upbeat
+description: The living docs for the zero-config, interactive-learning platform.
 template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
+  tagline: "One engine, two modes, three minutes to launch."
   image:
     file: ../../assets/houston.webp
   actions:
-    - text: Example Guide
-      link: /guides/example/
+    - text: 30-Second Tour
+      link: /architecture/system-overview
       icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
-      icon: external
+    - text: Try the Demo
+      link: /components/quiz-player
+      icon: open-book
+    - text: Deploy in 1 Line
+      link: /architecture/deployment-topologies
+      icon: rocket
       variant: minimal
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
-## Next steps
+## 🏗️ Quick start
 
 <CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
-	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
-	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
-	</Card>
+  <Card title="Teachers & Facilitators" icon="pencil">
+    Paste an `@OPENQUIZ` block → get a live room in 3 clicks.  
+    [Start here →](/architecture/system-overview)
+  </Card>
+
+  <Card title="Developers" icon="code">
+    Fork the repo, run `pnpm dev`, and ship new Svelte islands in minutes.  
+    [Building Islands →](/components/building-islands)
+  </Card>
+
+  <Card title="DevOps & Admins" icon="setting">
+    Deploy Full-mode on Kubernetes or hand out Edge-mode USB sticks.  
+    [Deployment Recipes →](/architecture/deployment-topologies)
+  </Card>
 </CardGrid>
+
+## 📂 Map of the Handbook
+
+| Section | What you’ll find |
+| --- | --- |
+| [Architecture](/architecture) | C4 diagrams, data model, security & runtime modes |
+| [API](/api) | GraphQL SDL, REST, WebSocket events, and schemas |
+| [Components](/components) | Live Svelte islands you can drop into any lesson |
+| [Governance](/governance) | Vision, roadmap, contributor charter, ADRs |
+
+---
+
+> “Documentation is a conversation—join in on [GitHub Discussions](https://github.com/UmaUpbeat/Handbook/discussions).”

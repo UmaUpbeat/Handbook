@@ -1,49 +1,60 @@
-# Starlight Starter Kit: Basics
+# 📘 Uma Upbeat Handbook
 
-[![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
+> “One mind, one beat – interactive learning without limits.”
 
-```
-pnpm create astro@latest -- --template starlight
-```
+This is the **single source of truth** for the Uma Upbeat project.  
+It contains **governance, architecture, APIs, component demos,** and **plug-in guides** – all rendered as a fast, accessible documentation site powered by [Astro Starlight](https://starlight.astro.build).
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+---
 
-## 🚀 Project Structure
+## 🚀 Quick Start
 
-Inside of your Astro + Starlight project, you'll see the following folders and files:
+```bash
+# 1. Clone the repo
+git clone https://github.com/UmaUpbeat/Handbook.git
+cd Handbook
 
-```
-.
-├── public/
-├── src/
-│   ├── assets/
-│   ├── content/
-│   │   └── docs/
-│   └── content.config.ts
-├── astro.config.mjs
-├── package.json
-└── tsconfig.json
+# 2. Install & run
+pnpm install
+pnpm dev        # localhost:4321
 ```
 
-Starlight looks for `.md` or `.mdx` files in the `src/content/docs/` directory. Each file is exposed as a route based on its file name.
+---
 
-Images can be added to `src/assets/` and embedded in Markdown with a relative link.
+## 📂 What’s Inside
 
-Static assets, like favicons, can be placed in the `public/` directory.
+| Folder                           | Purpose                                  |
+| -------------------------------- | ---------------------------------------- |
+| `src/content/docs/`              | All documentation pages (Markdown / MDX) |
+| `src/content/docs/governance/`   | Vision, mission, principles, ADRs        |
+| `src/content/docs/architecture/` | Diagrams, decision records               |
+| `src/content/docs/api/`          | GraphQL & REST references                |
+| `src/content/docs/components/`   | Live **Svelte** component demos          |
+| `src/components/`                | Re-usable Svelte islands                 |
+| `public/`                        | Static assets (favicons, images)         |
 
-## 🧞 Commands
+---
 
-All commands are run from the root of the project, from a terminal:
+## 🧞 CLI Cheat-Sheet
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
+| Command                 | Action                   |
+| ----------------------- | ------------------------ |
+| `pnpm dev`              | Start dev server         |
+| `pnpm build`            | Build to `./dist/`       |
+| `pnpm preview`          | Preview production build |
+| `pnpm astro add svelte` | Add Svelte integration   |
+| `pnpm astro check`      | Type-check Astro & MDX   |
 
-## 👀 Want to learn more?
+---
 
-Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).
+## 🤝 Contribute
+
+1. **Edit**: any `.md` or `.mdx` file.
+2. **Demo**: drop a Svelte component into `src/components/` and import it in an MDX page.
+3. **Propose**: open a PR or discuss in [Discussions](https://github.com/UmaUpbeat/Handbook/discussions).
+
+---
+
+## 📄 Licence
+
+AGPL-3.0 © Uma Upbeat Contributors.
